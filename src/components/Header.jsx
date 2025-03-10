@@ -44,26 +44,27 @@ const Header = () => {
         <Link to={"/"}>
           <img src={logo} alt="logo" width={180} />
         </Link>
-
-        <nav className="hidden lg:flex items-center gap-1 ml-5">
-          {navigation.map((nav, index) => {
-            return (
-              <div key={index}>
-                <NavLink
-                  key={nav.label + "header" + index}
-                  to={nav.href}
-                  className={({ isActive }) =>
-                    `px-2 hover:text-neutral-100 ${
-                      isActive && "text-neutral-100"
-                    }`
-                  }
-                >
-                  {nav.label}
-                </NavLink>
-              </div>
-            );
-          })}
-        </nav>
+        <SignedIn>
+          <nav className="hidden lg:flex items-center gap-1 ml-5">
+            {navigation.map((nav, index) => {
+              return (
+                <div key={index}>
+                  <NavLink
+                    key={nav.label + "header" + index}
+                    to={nav.href}
+                    className={({ isActive }) =>
+                      `px-2 hover:text-neutral-100 ${
+                        isActive && "text-neutral-100"
+                      }`
+                    }
+                  >
+                    {nav.label}
+                  </NavLink>
+                </div>
+              );
+            })}
+          </nav>
+        </SignedIn>
 
         <div className="ml-auto flex items-center gap-5">
           <SignedIn>

@@ -11,6 +11,7 @@ const ExplorePage = () => {
   const [data, setData] = useState([]);
   const [totalPageNo, setTotalPageNo] = useState(0);
   const navigate = useNavigate();
+  const { isSignedIn } = useUser();
 
   console.log("params", params.explore);
 
@@ -45,6 +46,12 @@ const ExplorePage = () => {
     setData([]);
     fetchData();
   }, [params.explore]);
+
+  useEffect(() => {
+    if (!isSignedIn) {
+      navigate("/login");
+    }
+  }, [isSignedIn, navigate]);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
