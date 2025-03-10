@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  background-color: #000000;
+  color: #ffff;
+  padding: 0;
+  margin: 0;
+  /* @apply bg-neutral-900 text-neutral-300 p-0 m-0 */
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ .cl-formButtonPrimary {
+  font-size: 14px;
+  text-transform: none;
+  background-color: #eb1515;
+  color: beige;
+  font-weight: bolder;
+  border: 2px solid black;
+}
+
+.cl-formButtonPrimary:hover{
+  background-color: #eb1515;
+}
+.cl-card {
+  background-color: rgba(24, 24, 27, 0.815);
+}
+
+
+.cl-formFieldInput{
+  background-color:rgba(31, 41, 55, 0.4);
+  color: #ffff;
+}
+
+.cl-footer , .cl-userButtonPopoverFooter{
+  display: none;
+} 
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f152;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9883ca;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
