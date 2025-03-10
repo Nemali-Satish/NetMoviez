@@ -30,6 +30,7 @@ const HorizontalScollCard = ({ data = [], heading, trending, media_type }) => {
                 index={index + 1}
                 trending={trending}
                 media_type={media_type}
+                
               />
             );
           })}
