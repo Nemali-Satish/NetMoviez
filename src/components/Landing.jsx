@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Landing = () => {
   const navigate = useNavigate();
   return (
-    <div className="flex flex-col items-center gap-5 justify-center h-[100vh] bg-[url(/background_banner.jpg)] bg-cover ">
+    <div className="flex flex-col items-center gap-5 justify-center min-h-[100vh] bg-[url(/background_banner.jpg)] bg-cover ">
       <div className=" absolute z-50 top-[40%]">
         <div className="flex  flex-col items-center gap-4">
           <h1 className="text-4xl font-extrabold text-white text-center">

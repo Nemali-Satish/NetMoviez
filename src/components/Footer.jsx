@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="text-center bg-transparent text-neutral-400 py-2">
+    <footer className="text-center bg-transparent text-neutral-400 mt-10 ">
       <div className="flex items-center justify-center gap-4">
         <a href="https://www.linkedin.com/in/satish-nemali">
           <BsLinkedin size={25} />
@@ -24,7 +24,7 @@ const Footer = () => {
           />
         </Link>
       </div>
-      <p className="text-md p-5">Created By @Satish Nemali</p>
+      <p className="text-md mt-5 tracking-[5px]">Created By @Satish Nemali</p>
     </footer>
   );
 };
